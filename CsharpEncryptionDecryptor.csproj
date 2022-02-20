@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D0A00C5F-EF65-466A-B54A-194354684CF6}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>CsharpEncryptionDecryptor</RootNamespace>
     <AssemblyName>CsharpEncryptionDecryptor</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
