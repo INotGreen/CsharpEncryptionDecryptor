@@ -4,7 +4,7 @@ A simple pe loading tool, hope you will like it, and give me a starï¼Œthank youï
 
 ## Bypass Windows Defender
 
-Use NJRAT to generate a client file, then use your encryptor to base64 encrypt the PE file, use # or * to replace the string A or T, put the processed ciphertext at the variable m string, and re-create it by visual studio Compile into exe file
+Use NJRAT to generate a client file, then use your encryptor to base64 encrypt the PE file, use # or * to replace the string A or T, put the processed ciphertext at the variable m string, and re-create it by visual studio generate the exe file
 
 [![image](https://user-images.githubusercontent.com/89376703/155084952-b6be3997-0445-40f5-8a99-e5317af045ff.png)](https://user-images.githubusercontent.com/89376703/155084952-b6be3997-0445-40f5-8a99-e5317af045ff.png)
 
